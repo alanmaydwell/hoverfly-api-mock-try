@@ -1,0 +1,14 @@
+DEBUG:root:starting 140231728787712
+DEBUG:root:flags:['-capture', '-db-path', 'requests.db', '-db', 'boltdb', '-pp', '8500', '-ap', '8888']
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8888
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): localhost:8888
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (3): localhost:8888
+DEBUG:urllib3.connectionpool:http://localhost:8888 "GET /api/health HTTP/1.1" 200 34
+DEBUG:root:has pid 5537
+DEBUG:root:writing to /tmp/hoverpy.8500.8888
+DEBUG:urllib3.connectionpool:http://localhost:8888 "PUT /api/delays HTTP/1.1" 201 39
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): restful-booker.herokuapp.com:443
+DEBUG:root:stopping
+DEBUG:root:deleting /tmp/hoverpy.8500.8888
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): restful-booker.herokuapp.com:443
+DEBUG:urllib3.connectionpool:https://restful-booker.herokuapp.com:443 "POST /auth HTTP/1.1" 200 27

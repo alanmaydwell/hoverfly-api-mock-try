@@ -1,0 +1,222 @@
+{
+	"data": {
+		"pairs": [
+			{
+				"request": {
+					"path": [
+						{
+							"matcher": "exact",
+							"value": "/auth"
+						}
+					],
+					"method": [
+						{
+							"matcher": "exact",
+							"value": "POST"
+						}
+					],
+					"destination": [
+						{
+							"matcher": "exact",
+							"value": "restful-booker.herokuapp.com"
+						}
+					],
+					"scheme": [
+						{
+							"matcher": "exact",
+							"value": "https"
+						}
+					],
+					"body": [
+						{
+							"matcher": "json",
+							"value": "{\n    \"username\" : \"admin\",\n    \"password\" : \"password123\"\n}"
+						}
+					]
+				},
+				"response": {
+					"status": 200,
+					"body": "{\"token\":\"13d25946142cd89\"}",
+					"encodedBody": false,
+					"headers": {
+						"Connection": [
+							"keep-alive"
+						],
+						"Content-Length": [
+							"27"
+						],
+						"Content-Type": [
+							"application/json; charset=utf-8"
+						],
+						"Date": [
+							"Fri, 12 Nov 2021 15:40:03 GMT"
+						],
+						"Etag": [
+							"W/\"1b-bLxdqQLk8TwGA3ZvFqQdqeZM8Ac\""
+						],
+						"Hoverfly": [
+							"Was-Here"
+						],
+						"Server": [
+							"Cowboy"
+						],
+						"Via": [
+							"1.1 vegur"
+						],
+						"X-Powered-By": [
+							"Express"
+						]
+					},
+					"templated": false
+				}
+			},
+			{
+				"request": {
+					"path": [
+						{
+							"matcher": "exact",
+							"value": "/booking"
+						}
+					],
+					"method": [
+						{
+							"matcher": "exact",
+							"value": "GET"
+						}
+					],
+					"destination": [
+						{
+							"matcher": "exact",
+							"value": "restful-booker.herokuapp.com"
+						}
+					],
+					"scheme": [
+						{
+							"matcher": "exact",
+							"value": "https"
+						}
+					],
+					"body": [
+						{
+							"matcher": "exact",
+							"value": ""
+						}
+					]
+				},
+				"response": {
+					"status": 200,
+					"body": "[{\"bookingid\":3},{\"bookingid\":10},{\"bookingid\":18},{\"bookingid\":14},{\"bookingid\":12},{\"bookingid\":4},{\"bookingid\":9},{\"bookingid\":19},{\"bookingid\":8},{\"bookingid\":5},{\"bookingid\":15},{\"bookingid\":2},{\"bookingid\":7},{\"bookingid\":11},{\"bookingid\":1},{\"bookingid\":17},{\"bookingid\":13},{\"bookingid\":6},{\"bookingid\":16}]",
+					"encodedBody": false,
+					"headers": {
+						"Connection": [
+							"keep-alive"
+						],
+						"Content-Length": [
+							"315"
+						],
+						"Content-Type": [
+							"application/json; charset=utf-8"
+						],
+						"Date": [
+							"Fri, 12 Nov 2021 15:40:03 GMT"
+						],
+						"Etag": [
+							"W/\"13b-eR9a4u8r87G0fG8BBubHxqncv6E\""
+						],
+						"Hoverfly": [
+							"Was-Here"
+						],
+						"Server": [
+							"Cowboy"
+						],
+						"Via": [
+							"1.1 vegur"
+						],
+						"X-Powered-By": [
+							"Express"
+						]
+					},
+					"templated": false
+				}
+			},
+			{
+				"request": {
+					"path": [
+						{
+							"matcher": "exact",
+							"value": "/booking/1"
+						}
+					],
+					"method": [
+						{
+							"matcher": "exact",
+							"value": "GET"
+						}
+					],
+					"destination": [
+						{
+							"matcher": "exact",
+							"value": "restful-booker.herokuapp.com"
+						}
+					],
+					"scheme": [
+						{
+							"matcher": "exact",
+							"value": "https"
+						}
+					],
+					"body": [
+						{
+							"matcher": "exact",
+							"value": ""
+						}
+					]
+				},
+				"response": {
+					"status": 200,
+					"body": "{\"firstname\":\"Eric\",\"lastname\":\"Ericsson\",\"totalprice\":120,\"depositpaid\":false,\"bookingdates\":{\"checkin\":\"2018-08-02\",\"checkout\":\"2021-05-29\"},\"additionalneeds\":\"Breakfast\"}",
+					"encodedBody": false,
+					"headers": {
+						"Connection": [
+							"keep-alive"
+						],
+						"Content-Length": [
+							"173"
+						],
+						"Content-Type": [
+							"application/json; charset=utf-8"
+						],
+						"Date": [
+							"Fri, 12 Nov 2021 15:40:04 GMT"
+						],
+						"Etag": [
+							"W/\"ad-oXSG2n9NlzBSeHpQ09t1ks6bwJk\""
+						],
+						"Hoverfly": [
+							"Was-Here"
+						],
+						"Server": [
+							"Cowboy"
+						],
+						"Via": [
+							"1.1 vegur"
+						],
+						"X-Powered-By": [
+							"Express"
+						]
+					},
+					"templated": false
+				}
+			}
+		],
+		"globalActions": {
+			"delays": [],
+			"delaysLogNormal": []
+		}
+	},
+	"meta": {
+		"schemaVersion": "v5.1",
+		"hoverflyVersion": "v1.3.0",
+		"timeExported": "2021-11-12T15:40:04Z"
+	}
+}
